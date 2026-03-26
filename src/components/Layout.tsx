@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Mail, MapPin, ChevronRight, ArrowUpRight, User, Heart, LogOut, Shield } from 'lucide-react';
-import { SiInstagram, SiLinkedin, SiWhatsapp, SiX } from 'react-icons/si';
+import { SiInstagram, SiWhatsapp, SiX } from 'react-icons/si';
+import { FaLinkedinIn } from 'react-icons/fa6';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { ROUTE_PATHS, TRANSLATIONS, scrollToTop } from '@/lib/index';
@@ -275,7 +276,7 @@ export function Layout({
                   <SiWhatsapp size={18} />
                 </a>
                 <a href="#" className="text-muted-foreground/60 hover:text-primary transition-all duration-300 transform hover:-translate-y-1">
-                  <SiLinkedin size={18} />
+                  <FaLinkedinIn size={18} />
                 </a>
                 <a href="#" className="text-muted-foreground/60 hover:text-primary transition-all duration-300 transform hover:-translate-y-1">
                   <SiX size={18} />
